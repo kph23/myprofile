@@ -1,7 +1,118 @@
 <!DOCTYPE html>
 <html>
-<body>
-<h1>Hello World</h1>
-<p>I'm creating my first GitHub Page</p>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Ajax, jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <!-- Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+        <title>Katia PHAN - Profile Page</title>
+    </head>
+
+    <body>
+        <nav class="navbar navbar-expand-sm navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand">KP</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link" href="#presentation">Presentation</a>
+                  <a class="nav-link" href="#skills">Skills</a>
+                  <a class="nav-link" href="#formation">Formation</a>
+                  <a class="nav-link" href="#experience">Experiences</a>
+                  <a class="nav-link" href="#contactme">Contact Me</a>
+                </div>
+              </div>
+            </div>
+          </nav>
+
+          <section class="container" id="presentation">
+            <h1 class="display-6">Presentation</h1>
+            <div class="text-md-center">
+              <img src="./images/katiaphan-photo-2020.jpg" class="rounded" width="20%">
+            </div>
+          </section>
+          <br>
+
+          <section class="container" id="skills">
+            <h1 class="display-6">Skills</h1>
+            <div class="text-md-center">
+              <div class="row">
+                <div class="col">
+                  <img src="./images/logo_HTML.png" class="rounded" height="100px">
+                </div>
+                <div class="col">
+                  <img src="./images/logo_CSS.png" class="rounded" height="100px">
+                </div>
+                <div class="col">
+                  <img src="./images/logo_JS.png" class="rounded" height="100px">
+                </div>
+              </div>            
+            </div>
+            <br>
+            <br>
+            <div class="text-md-center">
+              <div class="row">
+                <div class="col">
+                  <img src="./images/logo_VueJS.png" class="rounded" height="70px">
+                </div>
+                <div class="col">
+                  <img src="./images/logo_Vuetify.png" class="rounded" height="70px">
+                </div>
+              </div>            
+            </div>
+            <div class="text-md-center">
+              <div class="row">
+                <div class="col">
+                  <img src="./images/logo_Java.png" class="rounded" height="150px">
+                </div>
+              </div>            
+            </div>
+          </section>
+          <br>
+          
+          <section class="container" id="formation">
+            <h1 class="display-6">Formation</h1>
+            <div class="text-md-center">
+              <img src="./images/logo_UTT.png" class="rounded" height="100px">
+            </div>
+          </section>
+          <br>
+          
+          <section class="container" id="experience">
+            <h1 class="display-6">Experiences</h1>
+            <div class="text-md-center">
+              <img src="./images/logo_TECHNIA.png" class="rounded" height="100px">
+            </div>
+          </section>
+          <br>
+
+          <section class="container" id="contactme">
+            <h1 class="display-6">Contact Me</h1>
+
+            <form>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email address :</label>
+                <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+              </div>
+              <div class="mb-3">
+                <label for="messageObject" class="form-label">Object :</label>
+                <input type="text" class="form-control" id="messageObject" aria-describedby="emailHelp">
+              </div>
+              <div class="mb-3">
+                <label for="messageText" class="form-label">Message :</label>
+                <textarea class="form-control" id="messageText" placeholder="Write your message" style="height: 100px"></textarea>
+              </div>
+              <br>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </section>
+    </body>
 </html>
